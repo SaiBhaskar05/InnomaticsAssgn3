@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'poppins',Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    color: #ffffff;
+    background: rgb(3, 3, 3);
+    justify-content: space-between;
+    position: sticky;
+    border-bottom: 2px solid rgb(203, 203, 203);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 8px;
+    z-index: 1000;
+    top: 0;
+}
+.nav-cont{
+    text-decoration: none;
+    margin-right: 3rem;
+}
+.logo{
+    margin-left: 4rem;
+}
+.nav-cont ul{
+    list-style: none;
+    display: flex;
+}
+.nav-cont ul li{
+    margin-right: 2rem;
+    margin-top: 0.7rem;
+    font-size: large;
+}
+.nav-cont a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.nav-cont ul a:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.hero{
+    margin-top: -50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url('https://img.freepik.com/free-vector/modern-soft-brown-watercolor-brush-stroke-design-white-background_1055-20688.jpg?uid=R125099732&ga=GA1.1.1109099461.1719987932&semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: round;
+}
+.hero-cont{
+    font-size: x-large;
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+}
+.card{
+    height: 23rem;
+    width: 14rem;
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.top{
+    height: 10px;
+    width: 50%;
+    background-color: black;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.down{
+    margin-top: 80%;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 100%;
+}
+.mid button{
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    border: none;
+    background-color: rgb(250, 154, 43);
+    margin-top: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.mid button:hover{
+    background-color: white;
+    color: black;
+    border: 0.1px solid black;
+}
+.mid a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.midcon1{
+    margin-top: 10px;
+    height: 7px;
+    width: 50%;
+    background-color: gray;
+    border-radius: 10px; 
+}
+.midcon2{
+    margin-top: 10px;
+    height: 5px;
+    width: 30%;
+    background-color: gray;
+    border-radius: 10px;
+}
+.phnav{
+    display: flex;
+    background: rgba(255,255,255);
+    justify-content: space-around;
+    position: sticky;
+    border-bottom: 2px solid rgb(203, 203, 203);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 8px;
+    z-index: 1000;
+    top: 0;
+    flex-direction: column;
+    text-align: center;
+}
+.phco{
+    background-color: black;
+}
+.phco ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0.5rem;
+}
+.phco ul a:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.phco a{
+    text-decoration: none;
+    color: white;
+}
+.ph-logo{
+    margin-top: 0.3rem;
+}
+.downact{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://img.freepik.com/free-vector/geometric-grid-line-pattern-perspective-white-background_1017-54587.jpg?uid=R125099732&ga=GA1.1.1109099461.1719987932&semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    margin-top: 80px;
+}
+.cardsection{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.card1{
+    height: 23rem;
+    width: 14rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.card1 h1{
+    margin-top: 60px;
+}
+@media only screen and (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .hero h1{
+        font-size: x-large;
+    }
+    .cardsection{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+@media only screen and (min-width: 768px){
+    .phnav{
+        display: none;
+    }
+}
+.footer{
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.footcont{
+    font-weight: 700;
+    font-size: x-large;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    word-spacing: 2px;
+}
+.footcont1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footcont1 img{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+.copyright{
+    margin-top: 100px;
+    font-size: large;
+}
