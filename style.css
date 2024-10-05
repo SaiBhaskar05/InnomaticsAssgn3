@@ -194,6 +194,9 @@ body{
     .nav{
         display: none;
     }
+    .phnav{
+        font-size: small;
+    }
     .hero h1{
         font-size: x-large;
     }
